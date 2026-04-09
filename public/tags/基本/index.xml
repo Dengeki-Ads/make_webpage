@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>基本 on SEO記事サイト</title>
+    <link>http://localhost:1313/tags/%E5%9F%BA%E6%9C%AC/</link>
+    <description>Recent content in 基本 on SEO記事サイト</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E5%9F%BA%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SEO対策の基本｜初心者が最初に押さえるべき5つのポイント</title>
+      <link>http://localhost:1313/seo-basics-beginners-guide/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/seo-basics-beginners-guide/</guid>
+      <description>&lt;h2 id=&#34;seo対策とは&#34;&gt;SEO対策とは&lt;/h2&gt;&#xA;&lt;p&gt;SEO（Search Engine Optimization）とは、検索エンジンでWebサイトを上位表示させるための施策です。適切なSEO対策を行うことで、広告費をかけずに安定した集客が可能になります。&lt;/p&gt;&#xA;&lt;h2 id=&#34;ポイント1キーワード選定&#34;&gt;ポイント1：キーワード選定&lt;/h2&gt;&#xA;&lt;p&gt;SEO対策の第一歩はキーワード選定です。ユーザーがどのような言葉で検索するかを理解し、適切なキーワードをコンテンツに盛り込みましょう。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;検索ボリュームを確認する&lt;/li&gt;&#xA;&lt;li&gt;競合の強さを調べる&lt;/li&gt;&#xA;&lt;li&gt;ロングテールキーワードを活用する&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;ポイント2タイトルタグの最適化&#34;&gt;ポイント2：タイトルタグの最適化&lt;/h2&gt;&#xA;&lt;p&gt;タイトルタグは検索結果に表示される最も重要な要素です。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;主要キーワードを含める&lt;/li&gt;&#xA;&lt;li&gt;32文字以内に収める&lt;/li&gt;&#xA;&lt;li&gt;クリックしたくなる表現を使う&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;ポイント3見出し構造の整理&#34;&gt;ポイント3：見出し構造の整理&lt;/h2&gt;&#xA;&lt;p&gt;h1〜h3タグを使って、コンテンツの構造を明確にしましょう。検索エンジンはこの構造を読み取ってページの内容を理解します。&lt;/p&gt;&#xA;&lt;h3 id=&#34;見出しの使い方&#34;&gt;見出しの使い方&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;タグ&lt;/th&gt;&#xA;          &lt;th&gt;用途&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;h1&lt;/td&gt;&#xA;          &lt;td&gt;ページのメインタイトル（1ページに1つ）&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;h2&lt;/td&gt;&#xA;          &lt;td&gt;大見出し（セクションの区切り）&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;h3&lt;/td&gt;&#xA;          &lt;td&gt;小見出し（詳細な項目）&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;ポイント4メタディスクリプション&#34;&gt;ポイント4：メタディスクリプション&lt;/h2&gt;&#xA;&lt;p&gt;メタディスクリプションは検索結果のタイトル下に表示される説明文です。直接的なランキング要因ではありませんが、クリック率に大きく影響します。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;120文字程度で簡潔にまとめる&lt;/li&gt;&#xA;&lt;li&gt;キーワードを自然に含める&lt;/li&gt;&#xA;&lt;li&gt;ページの内容を正確に伝える&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;ポイント5表示速度の改善&#34;&gt;ポイント5：表示速度の改善&lt;/h2&gt;&#xA;&lt;p&gt;ページの表示速度はGoogleのランキング要因の一つです。特にモバイルでの表示速度は重要視されています。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;画像を最適化する（WebP形式を推奨）&lt;/li&gt;&#xA;&lt;li&gt;不要なJavaScriptを削減する&lt;/li&gt;&#xA;&lt;li&gt;キャッシュを活用する&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;&#xA;&lt;p&gt;SEO対策は一朝一夕で成果が出るものではありませんが、基本を押さえて継続的に取り組むことで確実に結果がついてきます。まずはこの5つのポイントから始めてみましょう。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://example.com&#34;&gt;無料SEO診断はこちら&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

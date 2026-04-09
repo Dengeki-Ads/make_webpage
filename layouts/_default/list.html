@@ -1,0 +1,25 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<div class="article-list">
+  {{ range .Paginator.Pages }}
+  <article class="article-card">
+    {{ with .Params.thumbnail }}
+    <img src="{{ . }}" alt="{{ $.Title }}" class="article-card__thumb" loading="lazy" width="400" height="225">
+    {{ end }}
+    <div class="article-card__body">
+      <h2 class="article-card__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <p class="article-card__desc">{{ .Description }}</p>
+      <div class="article-card__meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年01月02日" }}</time>
+        {{ with .Params.category }}
+        <span class="article-card__category">{{ . }}</span>
+        {{ end }}
+      </div>
+    </div>
+  </article>
+  {{ end }}
+</div>
+
+{{ template "_internal/pagination.html" . }}
+{{ end }}

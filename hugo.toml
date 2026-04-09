@@ -1,0 +1,33 @@
+baseURL = 'https://example.org/'
+languageCode = 'ja'
+title = 'SEO記事サイト'
+defaultContentLanguage = 'ja'
+
+[params]
+  description = 'SEO最適化された記事サイト'
+  author = 'サイト管理者'
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[outputs]
+  home = ['HTML', 'RSS']
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.5
+
+[pagination]
+  pagerSize = 20
+
+[permalinks]
+  articles = '/:slug/'

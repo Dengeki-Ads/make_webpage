@@ -1,0 +1,41 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>{{ .Site.Title }}</h1>
+  <p>{{ .Site.Params.description }}</p>
+</section>
+
+<section class="latest-articles">
+  <h2>最新の記事</h2>
+  <div class="article-list">
+    {{ range first 9 (where .Site.RegularPages "Section" "articles") }}
+    <article class="article-card">
+      {{ with .Params.thumbnail }}
+      <img src="{{ . }}" alt="{{ $.Title }}" class="article-card__thumb" loading="lazy" width="400" height="225">
+      {{ end }}
+      <div class="article-card__body">
+        <h3 class="article-card__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <p class="article-card__desc">{{ .Description }}</p>
+        <div class="article-card__meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年01月02日" }}</time>
+          {{ with .Params.category }}
+          <span class="article-card__category">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+  <div class="section-more">
+    <a href="/articles/">すべての記事を見る →</a>
+  </div>
+</section>
+
+<section class="categories-section">
+  <h2>カテゴリ</h2>
+  <div class="category-list">
+    {{ range .Site.Taxonomies.categories }}
+    <a href="{{ .Page.Permalink }}" class="category-badge">{{ .Page.Title }} ({{ .Count }})</a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

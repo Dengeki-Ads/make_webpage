@@ -1,0 +1,67 @@
+{{ define "head" }}
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Description }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with .Params.thumbnail }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}"
+  }
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+<article class="article">
+  <header class="article__header">
+    <h1 class="article__title">{{ .Title }}</h1>
+    <div class="article__meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年01月02日" }}</time>
+      {{ with .Params.category }}
+      <a href="/categories/{{ . | urlize }}/" class="article__category">{{ . }}</a>
+      {{ end }}
+      {{ range .Params.tags }}
+      <a href="/tags/{{ . | urlize }}/" class="article__tag">#{{ . }}</a>
+      {{ end }}
+    </div>
+  </header>
+
+  {{ with .Params.thumbnail }}
+  <img src="{{ . }}" alt="{{ $.Title }}" class="article__thumbnail" loading="lazy" width="800" height="450">
+  {{ end }}
+
+  {{ if .TableOfContents }}
+  <nav class="article__toc">
+    <h2>目次</h2>
+    {{ .TableOfContents }}
+  </nav>
+  {{ end }}
+
+  <div class="article__content">
+    {{ .Content }}
+  </div>
+
+  {{ with .Params.cta_url }}
+  <div class="article__cta">
+    <a href="{{ . }}" class="cta-button" rel="noopener">{{ $.Params.cta_text | default "詳細はこちら" }}</a>
+  </div>
+  {{ end }}
+
+  <footer class="article__footer">
+    {{ with .PrevInSection }}
+    <a href="{{ .Permalink }}" class="article__nav article__nav--prev">← {{ .Title }}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+    <a href="{{ .Permalink }}" class="article__nav article__nav--next">{{ .Title }} →</a>
+    {{ end }}
+  </footer>
+</article>
+{{ end }}
