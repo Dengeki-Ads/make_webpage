@@ -1,10 +1,10 @@
 baseURL = 'https://example.org/'
 languageCode = 'ja'
-title = 'SEO記事サイト'
+title = 'タイトル'
 defaultContentLanguage = 'ja'
 
 [params]
-  description = 'SEO最適化された記事サイト'
+  description = 'サブタイトル'
   author = 'サイト管理者'
 
 [taxonomies]
