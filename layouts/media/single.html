@@ -1,0 +1,25 @@
+{{ define "head" }}
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ end }}
+
+{{ define "main" }}
+<article class="page page--media">
+  <header class="page__header">
+    <h1 class="page__title">{{ .Title }}</h1>
+  </header>
+
+  {{ if .TableOfContents }}
+  <nav class="page__toc">
+    <h2>目次</h2>
+    {{ .TableOfContents }}
+  </nav>
+  {{ end }}
+
+  <div class="page__content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}
