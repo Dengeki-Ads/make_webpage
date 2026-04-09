@@ -26,3 +26,10 @@ layout: "media"
 | 媒体名 | キューラボ |
 | 運営会社 | 株式会社電撃 |
 | 連絡先 | お問い合わせフォームよりお願いいたします https://www.dengeki-inc.co.jp/contact |
+
+## 会社概要
+
+社名：株式会社電撃
+代表取締役：絹川隆彦
+会社所在地：160-0023　東京都新宿区西新宿4-37-14　KKMビル B1F
+お問い合わせフォーム　https://www.dengeki-inc.co.jp/contact 
